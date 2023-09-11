@@ -29,7 +29,7 @@ const UserCreateForm = ({ closeModal }) => {
 			}
 		>
 			<InputText
-				label='Nombre'
+				label='Name'
 				placeholder='John Doe'
 				error={name.error}
 				value={name.value}
@@ -45,16 +45,16 @@ const UserCreateForm = ({ closeModal }) => {
 				onChange={ev => dispatchFormValues(usernameChanged(ev.target.value))}
 			></InputTextAsync>
 			<Select name='role'>
-				<option value={USER_ROLES.TEACHER}>Profesor</option>
-				<option value={USER_ROLES.STUDENT}>Alumno</option>
-				<option value={USER_ROLES.OTHER}>Otro</option>
+				<option value={USER_ROLES.TEACHER}>TEACHER</option>
+				<option value={USER_ROLES.STUDENT}>STUDENT</option>
+				<option value={USER_ROLES.OTHER}>OTHER</option>
 			</Select>
 			<div className={style.active}>
 				<InputCheckbox name='active' />
-				<span>¿Activo?</span>
+				<span>Active?</span>
 			</div>
 			<Button type='submit' disabled={isFormInvalid || isSubmitting}>
-				{isSubmitting ? 'Cargando...' : 'Crear usuario'}
+				{isSubmitting ? 'Cargando...' : 'Create User'}
 			</Button>
 		</form>
 	);
@@ -84,9 +84,9 @@ const handleSubmit = async (
 
 	if (success) {
 		onSuccess();
-		alertBox.success('Usuario creado con éxito');
+		alertBox.success('User created succesfully');
 	} else {
-		alertBox.error('Error al crear usuario');
+		alertBox.error('Error creating user');
 	}
 	closeModal();
 };

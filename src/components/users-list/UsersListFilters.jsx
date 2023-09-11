@@ -23,7 +23,7 @@ const UsersListFilters = ({ search, onlyActive, sortBy, dispatchFilters }) => {
 			</Modal>
 			<div className={style.row}>
 				<InputSearch
-					placeholder='Buscar...'
+					placeholder='Search...'
 					value={search}
 					onChange={ev => dispatchFilters(searchChanged(ev.target.value))}
 				/>
@@ -33,11 +33,11 @@ const UsersListFilters = ({ search, onlyActive, sortBy, dispatchFilters }) => {
 						dispatchFilters(sortByChanged(Number(ev.target.value)))
 					}
 				>
-					<option value={SORT_OPTIONS.DEFAULT}>Por defecto</option>
-					<option value={SORT_OPTIONS.NAME}>Por nombre</option>
-					<option value={SORT_OPTIONS.ROLE}>Por rol</option>
+					<option value={SORT_OPTIONS.DEFAULT}>For Default</option>
+					<option value={SORT_OPTIONS.NAME}>For Name</option>
+					<option value={SORT_OPTIONS.ROLE}>For Role</option>
 					{!onlyActive && (
-						<option value={SORT_OPTIONS.ACTIVE}>Por activos</option>
+						<option value={SORT_OPTIONS.ACTIVE}>For Status</option>
 					)}
 				</Select>
 			</div>
@@ -50,9 +50,9 @@ const UsersListFilters = ({ search, onlyActive, sortBy, dispatchFilters }) => {
 							dispatchFilters(onlyActiveChanged(ev.target.checked))
 						}
 					/>
-					<p>Mostrar sólo activos</p>
+					<p>Display only actives</p>
 				</div>
-				<Button onClick={() => setShowModal(true)}>Añadir usuario</Button>
+				<Button onClick={() => setShowModal(true)}>Add User</Button>
 			</div>
 		</div>
 	);

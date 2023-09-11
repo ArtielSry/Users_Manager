@@ -34,15 +34,15 @@ const UserActions = ({ user }) => {
 				>
 					<li onClick={openEditModal}>
 						<PencilIcon />
-						<span>Editar</span>
+						<span>Update</span>
 					</li>
 					<li onClick={openPicModal}>
 						<PictureIcon />
-						<span>Cambiar foto</span>
+						<span>Change picture</span>
 					</li>
 					<li onClick={openDeleteModal}>
 						<TrashIcon />
-						<span>Eliminar</span>
+						<span>Delete</span>
 					</li>
 				</ul>
 			)}

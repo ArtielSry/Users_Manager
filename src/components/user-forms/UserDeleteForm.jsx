@@ -18,7 +18,7 @@ const UserDeleteForm = ({ currentUser, closeModal }) => {
 			}
 		>
 			<p>
-				¿Estás seguro de que quieres eliminar al usuario {'"'}
+				Are you sure about delete {'"'}
 				{currentUser.name}
 				{'"'}?
 			</p>
@@ -28,10 +28,10 @@ const UserDeleteForm = ({ currentUser, closeModal }) => {
 				disabled={isSubmitting}
 				onClick={closeModal}
 			>
-				{isSubmitting ? 'Cargando...' : 'Cancelar'}
+				{isSubmitting ? 'Loading...' : 'Cancel'}
 			</Button>
 			<Button type='submit' disabled={isSubmitting}>
-				{isSubmitting ? 'Cargando...' : 'Eliminar usuario'}
+				{isSubmitting ? 'Loading...' : 'Delete user'}
 			</Button>
 		</form>
 	);
@@ -54,7 +54,7 @@ const handleSubmit = async (
 		onSuccess();
 		alertBox.success('Usuario eliminado con éxito');
 	} else {
-		alertBox.error('Error al eliminar al usuario');
+		alertBox.error('Error al Delete al usuario');
 	}
 	closeModal();
 };

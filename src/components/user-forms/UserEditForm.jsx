@@ -45,7 +45,7 @@ const UserEditForm = ({ currentUser, closeModal }) => {
 			}
 		>
 			<InputText
-				label='Nombre'
+				label='Name'
 				placeholder='John Doe'
 				error={name.error}
 				value={name.value}
@@ -72,19 +72,19 @@ const UserEditForm = ({ currentUser, closeModal }) => {
 				value={role}
 				onChange={ev => dispatchFormValues(roleChanged(ev.target.value))}
 			>
-				<option value={USER_ROLES.TEACHER}>Profesor</option>
-				<option value={USER_ROLES.STUDENT}>Alumno</option>
-				<option value={USER_ROLES.OTHER}>Otro</option>
+				<option value={USER_ROLES.TEACHER}>TEACHER</option>
+				<option value={USER_ROLES.STUDENT}>STUDENT</option>
+				<option value={USER_ROLES.OTHER}>OTHER</option>
 			</Select>
 			<div className={style.active}>
 				<InputCheckbox
 					checked={active}
 					onChange={ev => dispatchFormValues(activeChanged(ev.target.checked))}
 				/>
-				<span>¿Activo?</span>
+				<span>¿active?</span>
 			</div>
 			<Button type='submit' disabled={isFormInvalid || isSubmitting}>
-				{isSubmitting ? 'Cargando...' : 'Editar usuario'}
+				{isSubmitting ? 'Cargando...' : 'Update usuario'}
 			</Button>
 		</form>
 	);

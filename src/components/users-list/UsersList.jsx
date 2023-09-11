@@ -14,6 +14,7 @@ import UsersListRows from './UsersListRows';
 import UsersListViewSelector from './UsersListViewSelector';
 
 const UsersList = () => {
+	// Format to display the users
 	const [showRowsFormat, setShowRowsFormat] = useState(true);
 
 	const [filters, dispatchFilters] = useReducer(
@@ -25,7 +26,7 @@ const UsersList = () => {
 
 	return (
 		<div className={style.wrapper}>
-			<h1 className={style.title}>Listado de usuarios</h1>
+			<h1 className={style.title}>Users Manager</h1>
 			<AlertBox />
 			<UserFormsContext.Provider
 				value={{ onSuccess: () => dispatchFilters(reset()) }}
