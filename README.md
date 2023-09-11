@@ -1,5 +1,4 @@
 # Users_Manager
-Still working on it 
 
 Requirements document:
 
@@ -118,4 +117,6 @@ New functional requirements:
 New non-functional requirements:
 
 - The tasks of filtering, sorting and pagination of elements must be carried out directly on the server, using the API, instead of being carried out on the client.
+
+![ss](https://github.com/ArtielSry/Users_Manager/assets/113340763/88af0c45-be2d-41b7-969f-880e908b5b23)
 
