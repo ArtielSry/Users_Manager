@@ -1,4 +1,15 @@
 # Users_Manager
+![Screenshot 2023-09-28 105019](https://github.com/ArtielSry/Users_Manager/assets/113340763/e0810309-aa3b-4527-8db9-95c918d7fe9d)
+
+![Screenshot 2023-09-28 105046](https://github.com/ArtielSry/Users_Manager/assets/113340763/67b72bcf-39d7-47ab-b70c-dd26326bf1b0)
+
+![Screenshot 2023-09-28 105100](https://github.com/ArtielSry/Users_Manager/assets/113340763/13f6ef99-7ba1-4ad2-b62d-483728d405c2)
+
+![Screenshot 2023-09-28 105118](https://github.com/ArtielSry/Users_Manager/assets/113340763/0743ed94-5ec6-4255-abd0-274bdbce188f)
+
+![Screenshot 2023-09-28 105125](https://github.com/ArtielSry/Users_Manager/assets/113340763/52b26e11-9f58-493b-95c9-4cad62b750c7)
+
+![Screenshot 2023-09-28 105137](https://github.com/ArtielSry/Users_Manager/assets/113340763/8f987140-c700-4f29-814d-d5fcf5993544)
 
 Requirements document:
 
@@ -118,5 +129,4 @@ New non-functional requirements:
 
 - The tasks of filtering, sorting and pagination of elements must be carried out directly on the server, using the API, instead of being carried out on the client.
 
-![ss](https://github.com/ArtielSry/Users_Manager/assets/113340763/88af0c45-be2d-41b7-969f-880e908b5b23)
 
