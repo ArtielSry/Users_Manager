@@ -1,4 +1,8 @@
 # Users_Manager
+1. Download the project
+2. npm run server
+3. npm run dev
+
 ![Screenshot 2023-09-28 105019](https://github.com/ArtielSry/Users_Manager/assets/113340763/e0810309-aa3b-4527-8db9-95c918d7fe9d)
 
 ![Screenshot 2023-09-28 105046](https://github.com/ArtielSry/Users_Manager/assets/113340763/67b72bcf-39d7-47ab-b70c-dd26326bf1b0)
